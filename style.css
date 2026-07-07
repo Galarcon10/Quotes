@@ -29,5 +29,54 @@ body {
 .quote-text {
     font-size: 2.75rem;
     margin-bottom: 20px;
-    font-family: 'argesta hairline', sans-serif;
+    font-family: 'montserrat', sans-serif;
 }
+
+.long-quote {
+    font-size: 2.25rem;
+}
+
+.fa-quote-left {
+    font-size: 4rem;
+}
+.fa-quote-right {
+    font-size: 4rem;
+}
+
+.quote-author {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'montserrat';
+    margin-top: 20px; 
+    font-weight: 400;   
+}
+
+#quote {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'bodoni moda', serif;
+    background-color: #F04B22;
+    color: #fbfbfb;
+    margin: 1rem;
+    text-align: center;
+    FONT-WEIGHT: 400;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/* Media Queries: tablet or mobile */
+@media screen and (max-width: 1000px) {
+    .quote-container {
+        margin: auto 10px;
+    }
+    .quote-text {
+        font-size: 2rem;
+    }
+    .long-quote {
+        font-size: 1.75rem;
+    }
+    .quote-author {
+        font-size: 1.5rem;
+    }
+}
+
