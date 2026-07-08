@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    margin: 0px;
+    min-height: 100vh;  
+    background-image: url("Images/typographic-background.png"); 
+    Font-family: 'Bodoni Moda', serif;
+    font-weight: 700;
+    text-align: center; 
+    align-items: center;
+    justify-content: space-around; 
+    Display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: #F04B22;
+    font-size: 1rem;
+    margin: 1rem;
+    background-color: #fbfbfb;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.8);
+    font-family: 'montserrat', sans-serif;
+}
+a:hover{
+    background-color: #F04B22;
+    color: #fbfbfb;
+    box-shadow: 0px 0px 5px 2px #F04B22;
+}
+a:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 5px 2px rgba(240, 75, 34, 0.8);
+}
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-family: 'montserrat', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 5px solid #f8f8f8;
+}
+#containerOfLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    background-color: #F04B22;
+    padding: 5rem;
+    border-radius: 10px;
+    border: #000000 5px solid;
+}
+p {
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-family: 'montserrat Alternates', sans-serif;
+    font-weight: 400;
+    Padding: 1rem;
+}
+.link-container{
+    background-color: #000000;
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 1rem;
+    border: 5px solid #f8f8f8;
+}
