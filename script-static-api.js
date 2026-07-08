@@ -1,4 +1,13 @@
+const quoteContainer = document.getElementById("quote-container");
+
 let apiQuotes = []; 
+
+// show new quote   
+function newQuote() {
+    const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
+    const quoteText = document.getElementById("quote");
+    quoteText.textContent = quote.text;
+}
 
 // Get quotes from api  
 async function getQuotes() {
@@ -6,7 +15,7 @@ async function getQuotes() {
     try {
         const response = await fetch(apiUrl);
         apiQuotes = await response.json();
-        console.log(apiQuotes);
+        newQuote();
     } catch (error) {
         console.error("Failed to fetch quotes:", error);
     }

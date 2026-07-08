@@ -47,19 +47,21 @@ body {
 }
 #quote {
     font-size: 2.5rem;
-    margin-bottom: 20px;
     font-family: 'bodoni moda', serif;
-    background-color: #F04B22;
     color: #fbfbfb;
-    margin: 1rem;
     text-align: justify;
     FONT-WEIGHT: 400;
     font-style: italic;
-    text-decoration: underline;
+    border: 1px solid #ffffff;
+    padding: 1rem;
+    border-radius: 1rem; 
 }
 .button-container {
     display: flex;
     justify-content: space-between;
+    background-color: #F04B22;
+    padding: 2rem;
+    border-radius: 2rem;
 }
 button {
     font-size: 1.5rem;
@@ -71,6 +73,9 @@ button {
     outline: none;
     padding: 0.5rem 1.8rem;
     box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.8);
+    border: 1px solid #000000;
+    font-family: 'montserrat', sans-serif;
+    font-weight: 700;
 }
 button:hover {
     background-color: #F04B22;
@@ -82,21 +87,69 @@ button:active {
     transform: scale(0.95);
     box-shadow: 0px 0px 5px 2px rgba(240, 75, 34, 0.8);
 }
+.back-button {
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    outline: none;
+    padding: 0.5rem 1.8rem;
+    box-shadow: 0px 0px 5px 2px rgba(255, 255, 255, 0.8);
+    border: 1px solid #000000;
+    text-decoration: none;
+    font-weight: 700;
+}
+.back-button:hover {
+    background-color: #F04B22;
+    color: #ffffff;
+    box-shadow: 0px 0px 5px 2px rgba(240, 75, 34, 0.8);
+    filter: brightness(110%);
+}
+
+
+
 /* Media Queries: tablet or mobile */
 @media screen and (max-width: 600px) {
     .quote-container {
-        margin: auto 10px;
+        margin:0 ;
+        padding: 0;
     }
     .quote-text {
-        font-size: 2rem;
+        font-size: 1rem;    
     }
     .long-quote {
-        font-size: 1.75rem;
+        font-size: 1rem;
     }
     .quote-author {
         font-size: 1.5rem;
     }
+    #quote {
+        font-size: 1rem;
+        padding: 0.5rem;  
+        text-align: justify;
+        text-align: center;
+        width: 100vw;
+    }
+    button {
+        font-size: 0.5rem;
+        padding: 0.5rem 0.5rem;
+        margin: 0 0.2rem;
+    }
+    .back-button {
+        font-size: 0.5rem;
+        padding: 0.5rem 0.5rem;
+    }
+    .button-container {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
 }
+
+
+
+
 @media screen and (max-width: 1000px) {
     .quote-container {
         margin: auto 10px;
