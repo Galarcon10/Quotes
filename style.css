@@ -155,16 +155,47 @@ button:active {
 
 
 @media screen and (max-width: 1000px) {
-    .quote-container {
-        margin: auto 10px;
+    quote-container {
+    border: none; 
     }
     .quote-text {
-        font-size: 2rem;
-    }
-    .long-quote {
-        font-size: 1.75rem;
+        font-size: 2rem;    
     }
     .quote-author {
         font-size: 1.5rem;
     }
+    #quote {
+        font-size: 2rem;
+        padding: 0.5rem;  
+        text-align: justify;
+        text-align: center;   
+    }
+    button {
+        font-size: 0.5rem;
+        
+    }
+    .back-button {
+       padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    .button-container {
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+    #quote.long-quote {
+    font-size: 2rem;
+    }
+    .threads-button{
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    .twitter-button{
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    .new-quote{
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+    }
+    
 }
