@@ -19,6 +19,8 @@ body {
     justify-content: space-around; 
     Display: flex;
     flex-direction: column;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 a{
     text-decoration: none;
@@ -56,7 +58,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 5rem;
+    margin-top: 0rem;
     background-color: #F04B22;
     padding: 5rem;
     border-radius: 10px;

@@ -10,6 +10,7 @@ body {
     background-image: url("Images/typographic-background.png"); 
     Font-family: 'Montserrat Alternates', sans-serif;
     font-weight: 700;
+    flex-direction: column;
     text-align: center; 
     align-items: center;
     justify-content: center; 
@@ -17,6 +18,7 @@ body {
     background-size: cover;
     background-position: center;    
     background-repeat: no-repeat;
+    padding-top: 6.5rem;
 }
 .quote-container {
     width: auto;  
@@ -25,7 +27,7 @@ body {
     border-radius: 10px;
     background-color: rgb(0, 0, 0);
     box-shadow:10px 10px 10px 10px rgba(0, 0, 0, 0.8);
-    border: 5px solid #f8f8f8;
+    border: 0.2rem solid #f8f8f8;
     color: #ffffff;
 }
 .quote-text {
@@ -104,62 +106,65 @@ button:active {
     text-decoration: none;
     font-weight: 700;
 }
-.back-button:hover {
-    background-color: #F04B22;
-    color: #ffffff;
-    box-shadow: 0px 0px 5px 2px rgba(240, 75, 34, 0.8);
-    filter: brightness(110%);
-}
+
 
 /* Loader */
-.loader {
+/* .loader {
   border: 16px solid #000000; 
   border-top: 16px solid #F04B22; 
   border-radius: 50%; 
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite; 
-} 
-
-.home {
-    position: fixed;
-    top: 10%;
-    transform: translate(-50%, -50%);
-    width: 128px;
-    height: 128px;
-    animation: spin 5s linear infinite;
-    background-image: url("Images/128x128favicon.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 0.2rem #fbfbfb;
-    border-radius: 5rem;
-}
-.home:hoover{
-    background-color: #F04B22;
-    color: #ffffff;
-    box-shadow: 0px 0px 5px 2px rgba(240, 75, 34, 0.8);
-    filter: brightness(110%);
-}
+}  */
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
-
-@media screen and (min-width: 700px) {
-    .home {
+.navbar {
     position: fixed;
-    top: 3%;
-    left: 44%;
-    width: 128px;
-    height: 128px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    border-bottom   : 0.5rem solid #ffffff;
+    z-index: 10;
+}
+.home {
+    width: 4rem;
+    height: 4rem;
     animation: spin 5s linear infinite;
-    background-image: url("Images/128x128favicon.png");
+    background-image: url("Images/256x256favicon.png");
     background-repeat: no-repeat;
     background-size: contain;
     border: solid 0.2rem #fbfbfb;
-    border-radius: 5rem;
-    }
+    border-radius: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    box-sizing: border-box;
+    z-index: 10;
+}
+.home:hover {
+    background-image: url("Images/256x256faviconwhite.png");
+    border: solid 0.2rem #000000;
+}
+
+
+@media screen and (min-width: 700px) {
+    
+    .home:hover {
+    background-image: url("Images/256x256faviconwhite.png");
+    border: solid 0.2rem #000000;
+    }   
     .quote-container { 
         width: 100vw;
     }
@@ -203,51 +208,18 @@ button:active {
     }
 }
 
-@media screen and (min-width: 900px){
-    .home {
-    position: fixed;
-    left: 46%;
-    width: 128px;
-    height: 128px;
-    animation: spin 5s linear infinite;
-    background-image: url("Images/128x128favicon.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 0.2rem #fbfbfb;
-    border-radius: 5rem;
-    }
-} 
-@media screen and (min-width: 2000px){
-    .home {
-    position: fixed;
-    left: 46%;
-    width: 256px;
-    height: 256px;
-    animation: spin 5s linear infinite;
-    background-image: url("Images/256x256favicon.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 0.2rem #fbfbfb;
-    border-radius: 15rem;
-    }
-} 
-
 /* Media Queries: tablet or mobile */
 @media screen and (max-width: 699px) {
-    .home {
-    position: fixed;
-    top: 3%;
-    left: 42%;
-    transform: translate(-50%, -50%);
-    width: 64px;
-    height: 64px;
-    animation: spin 5s linear infinite;
-    background-image: url("Images/64x64favicon.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    border: solid 0.2rem #fbfbfb;
-    border-radius: 5rem;
-    }
+
+    .button-container {
+        width: 100%;
+        box-sizing: border-box;
+        border: 0.2rem solid rgb(255, 255, 255);
+        border-top: none;
+        border-radius: 10px;
+        background-color: #000000;
+        padding: 1rem;
+}
     .quote-text {
         font-size: 1rem;    
     }
@@ -268,14 +240,7 @@ button:active {
         padding: 0.5rem 0.5rem;
         margin: 0 0.2rem;
     }
-    .back-button {
-        font-size: 0.5rem;
-        padding: 0.5rem 0.5rem;
-    }
-    .button-container {
-        border-radius: 0;
-        border: 0.2rem solid #f8f8f8;
-    }
+
     #quote.long-quote {
     font-size: 1rem;
 }
