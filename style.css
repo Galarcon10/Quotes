@@ -116,8 +116,7 @@ button:active {
 /* Media Queries: tablet or mobile */
 @media screen and (max-width: 600px) {
     .quote-container {
-        margin:0 ;
-        padding: 0;
+    border: none; 
     }
     .quote-text {
         font-size: 1rem;    
@@ -132,8 +131,7 @@ button:active {
         font-size: 1rem;
         padding: 0.5rem;  
         text-align: justify;
-        text-align: center;
-        width: 100vw;
+        text-align: center;   
     }
     button {
         font-size: 0.5rem;
@@ -145,8 +143,8 @@ button:active {
         padding: 0.5rem 0.5rem;
     }
     .button-container {
-        margin: 0.5rem;
         padding: 1rem;
+        border-radius: 0.5rem;
     }
     #quote.long-quote {
     font-size: 1rem;
