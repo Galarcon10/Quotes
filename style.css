@@ -112,8 +112,8 @@ button:active {
 }
 
 @media screen and (min-width: 700px) {
-    quote-container {
-    border: none; 
+    .quote-container { 
+        width: 100vw;
     }
     .quote-text {
         font-size: 2rem;    
@@ -153,7 +153,6 @@ button:active {
         padding: 1rem 1.5rem;
         font-size: 1.5rem;
     }
-    
 }
 
 /* Media Queries: tablet or mobile */
@@ -172,7 +171,7 @@ button:active {
     }
     #quote {
         font-size: 1rem;
-        padding: 0.5rem;  
+        padding: 0.5rem 4rem;  
         text-align: justify;
         text-align: center;   
     }
@@ -186,8 +185,9 @@ button:active {
         padding: 0.5rem 0.5rem;
     }
     .button-container {
-        padding: 1rem;
-        border-radius: 0.5rem;
+        border-radius: 0;
+        width: 90vw;
+        border: 0.2rem solid #f8f8f8;
     }
     #quote.long-quote {
     font-size: 1rem;
