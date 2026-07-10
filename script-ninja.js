@@ -1,5 +1,4 @@
 // Get quotes from API ninjas
-
 const quoteText = document.getElementById("quote");
 const authorName = document.getElementById("authorName");
 const newQuoteBtn = document.getElementById("new-quote");
@@ -7,24 +6,15 @@ const twitterBtn = document.getElementById("twitter");
 const threadBtn = document.getElementById("threads");
 const loader = document.getElementById("loader");
 const quoteContainer = document.getElementById("quote-container");
+const categories = document.getElementById("categories");
 
 let apiQuotes = [];
-
-function loading() {
-  loader.hidden = false;
-  quoteContainer.hidden = true;
-}
-
-function complete() {
-  quoteContainer.hidden = false;
-  loader.hidden = true;
-}
 
 // Get quotes from api
 async function getQuotes() {
   quoteText.textContent = "Loading...";
   authorName.textContent = "";
-
+  categories.textContent = "Loading...";
   try {
     const response = await fetch(
       "https://api.api-ninjas.com/v2/randomquotes?categories=success,wisdom",
@@ -45,19 +35,15 @@ async function getQuotes() {
 
 // Show new quote
 function newQuote() {
-  // loading();
-  loading();
-  complete();
   const quote = apiQuotes[0];
-
   authorName.textContent = quote.author || "Unknown";
   quoteText.textContent = quote.quote;
+  categories.textContent = quote.categories;
   if (quote.quote.length > 100) {
     quoteText.classList.add("long-quote");
   } else {
     quoteText.classList.remove("long-quote");
   }
-  // complete();
 }
 
 // Tweet quote

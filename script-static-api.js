@@ -8,16 +8,6 @@ const loader = document.getElementById("loader");
 
 let apiQuotes = [];
 
-function loading() {
-  loader.hidden = false;
-  quoteContainer.hidden = true;
-}
-
-function complete() {
-  quoteContainer.hidden = false;
-  loader.hidden = true;
-}
-
 // Show new quote
 function newQuote() {
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
@@ -38,13 +28,11 @@ function newQuote() {
 async function getQuotes() {
   quoteText.textContent = "Loading...";
   authorText.textContent = "";
-  loading();
   const apiUrl = "https://jacintodesign.github.io/quotes-api/data/quotes.json";
   try {
     const response = await fetch(apiUrl);
     apiQuotes = await response.json();
     newQuote();
-    complete();
   } catch (error) {
     console.error("Failed to fetch quotes:", error);
   }
