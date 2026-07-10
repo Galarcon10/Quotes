@@ -4,7 +4,6 @@ const authorText = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter");
 const threadBtn = document.getElementById("threads");
 const newQuoteBtn = document.getElementById("new-quote");
-const loader = document.getElementById("loader");
 
 let apiQuotes = [];
 

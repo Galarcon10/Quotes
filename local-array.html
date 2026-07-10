@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>"Anotation", Quote Generator</title>
+    <title>Document</title>
     <link
       rel="icon"
       type="image/png"
@@ -24,9 +24,10 @@
       href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="index-style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Nav-bar -->
     <nav class="navbar">
       <a class="home" id="home" href="index.html"></a>
       <a
@@ -48,22 +49,27 @@
         <i class="fa-brands fa-github"></i>
       </a>
     </nav>
-    <div id="containerOfLinks">
-      <h1>Quote Generator</h1>
-      <div class="link-container">
-        <p>
-          This quote generator fetches data from a JSON API thats hosted in
-          GitHub.
-        </p>
-        <a href="staticApi.html">Static API Quote Generator</a>
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
+    <div class="quote-container" id="quote-container">
+      <!-- Quote element -->
+      <div class="quote-text">
+        <h1>"Jokes from a local array"</h1>
+        <div id="quote"></div>
       </div>
-      <div class="link-container">
-        <p>This quote generator fetches data from the API Ninjas service</p>
-        <a href="ninja.html">API Ninjas Quote Generator</a>
+      <!-- Author -->
+      <div class="quote-author">
+        <span id="authorName"> </span>
       </div>
-      <div class="link-container">
-        <p>This quote generator uses a local array of jokes.</p>
-        <a href="local-array.html">Jokes from a local array</a>
+      <!-- Button -->
+      <div class="button-container">
+        <button class="threads-button" id="threads" title="Thread this">
+          <i class="fa-brands fa-square-threads"></i>
+        </button>
+        <button class="new-quote" id="new-quote">New joke</button>
+        <button class="twitter-button" id="twitter" title="Tweet this">
+          <i class="fa-brands fa-square-twitter"></i>
+        </button>
       </div>
     </div>
     <footer class="footer">
@@ -99,5 +105,8 @@
         <i class="fa-solid fa-envelope"></i>
       </a>
     </footer>
+    <!-- Script -->
+    <script type="module" src="/jokes.js"></script>
+    <script type="module" src="/script-local-array.js"></script>
   </body>
 </html>
