@@ -24,6 +24,9 @@ body {
   background-repeat: no-repeat;
   padding-top: 6.5rem;
 }
+#quoteText {
+  font-family: "bodoni moda", serif;
+}
 .quote-container {
   width: auto;
   max-width: 50rem;

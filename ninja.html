@@ -1,33 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="Images/32x32favicon.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="Images/16x16favicon.png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Images/32x32favicon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Images/16x16favicon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nav-bar -->
+    <nav class="navbar">
+      <a class="home" id="home" href="index.html"></a>
+      <a
+        class="linkedin-link"
+        id="linkedin"
+        href="https://www.linkedin.com/in/galarcon10"
+        target="_blank"
+        title="My LinkedIn"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        href="https://github.com/Galarcon10"
+        class="git-link"
+        id="git"
+        target="_blank"
+        title="My GitHub"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </nav>
+    <!-- Loader -->
+    <div class="loader" id="loader"></div>
     <div class="quote-container" id="quote-container">
-    <!-- Quote element -->
-     <div class="quote-text">
-       <h1>"Inspiring quotes"</h1>
-      <span id="quote">“Be yourself; everyone else is already taken.”</span>
-     </div>
-     <!-- Author -->
-     <div class="quote-author">
-      <span id="author"> Oscar Wilde</span> 
-     </div>
-     <!-- Button -->
+      <!-- Quote element -->
+      <div class="quote-text">
+        <h1>"Inspiring quotes API Ninjas"</h1>
+        <span id="quote"></span>
+      </div>
+      <!-- Author -->
+      <div class="quote-author">
+        <span id="authorName"> </span>
+      </div>
+      <!-- Button -->
       <div class="button-container">
-        <button class="twitter-button" id="twitter" title="Tweet this"><i class="fa-brands fa-square-twitter"></i>
+        <button class="threads-button" id="threads" title="Thread this">
+          <i class="fa-brands fa-square-threads"></i>
         </button>
         <button class="new-quote" id="new-quote">New Quote</button>
+        <button class="twitter-button" id="twitter" title="Tweet this">
+          <i class="fa-brands fa-square-twitter"></i>
+        </button>
       </div>
-  </div>
-    
-</body>
+    </div>
+    <footer class="footer">
+      <a
+        href="https://www.instagram.com/galarcon_10"
+        target="_blank"
+        title="Instagram"
+        class="footer-link"
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a
+        href="https://github.com/Galarcon10"
+        target="_blank"
+        title="GitHub"
+        class="footer-link"
+      >
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/galarcon10"
+        target="_blank"
+        title="LinkedIn"
+        class="footer-link"
+      >
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a
+        href="mailto:gonzandres10@hotmail.com"
+        title="Email me"
+        class="footer-link"
+      >
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </footer>
+    <!-- Script -->
+    <script src="script-ninja.js"></script>
+  </body>
 </html>

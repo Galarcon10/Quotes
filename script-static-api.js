@@ -20,7 +20,6 @@ function complete() {
 
 // Show new quote
 function newQuote() {
-  loading();
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
   if (!quote.author) {
     authorText.textContent = "Unknown";
@@ -33,16 +32,19 @@ function newQuote() {
     quoteText.classList.remove("long-quote");
   }
   quoteText.textContent = quote.text;
-  complete();
 }
 
 // Get quotes from api
 async function getQuotes() {
+  quoteText.textContent = "Loading...";
+  authorText.textContent = "";
+  loading();
   const apiUrl = "https://jacintodesign.github.io/quotes-api/data/quotes.json";
   try {
     const response = await fetch(apiUrl);
     apiQuotes = await response.json();
     newQuote();
+    complete();
   } catch (error) {
     console.error("Failed to fetch quotes:", error);
   }
