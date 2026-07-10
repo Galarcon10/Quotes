@@ -115,7 +115,6 @@ const localLove = [
     mood: "Hopeful",
     language: "English",
   },
-  ,
   {
     id: 11,
     quote:
@@ -229,7 +228,6 @@ const localLove = [
     mood: "Tender",
     language: "English",
   },
-  ,
   {
     id: 21,
     quote:
