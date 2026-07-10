@@ -213,6 +213,17 @@ button:active {
 .footer-link:active {
   transform: scale(0.9);
 }
+#container-metadata {
+  padding: 1rem;
+  font-weight: 100;
+  border: 1px solid white;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.metadataClass {
+  margin: 1.4rem;
+}
 
 @media screen and (min-width: 700px) {
   .quote-container {
